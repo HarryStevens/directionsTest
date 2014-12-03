@@ -44,10 +44,10 @@ html, body, #map-canvas {
 #directions-title {
 	text-align: center;
 }
-.adp {
+.adp, .adp-text, .adp-substep {
 	font-family: Helvetica !important;
 	font-size: 12px !important;
 }
 .adp-legal, .adp-warnbox {
-	display: none !important;
+	display: none;
 }
