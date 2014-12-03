@@ -3,8 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
 		<link rel="stylesheet" href="styles.css" />
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 		<script type="text/javascript" src="scripts.js"></script>
 		<title>Directions Test</title>
@@ -12,15 +14,16 @@
 	<body>
 <div id="title">Directions Test</div>
 		<div id="panel">
-			<b>Start: </b>
+			<div class="panel-label"><div class="inline">Start:</div>
 			<input id="start" onchange="calcRoute();">
-				
+			
 			</input>
-			<b>End: </b>
+			</div>
+			End:
 			<input id="end" onchange="calcRoute();">
 			</input>
 		</div>
-		<div id="directionsPanel">Directions</div>
+		<div id="directions-panel"><div id="directions-title">Directions</div></div>
 		<div id="map-canvas"></div>
 
 	</body>

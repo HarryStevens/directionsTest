@@ -14,53 +14,40 @@ html, body, #map-canvas {
 }
 #panel {
 	position: absolute;
-	top: 45px;
-	left: 38%;
-	margin-left: -180px;
+	top: 47px;
+	left: 7px;
 	z-index: 5;
 	background-color: #fff;
 	padding: 5px;
 	border: 1px solid #999;
 	font-family: Helvetica;
-	font-size: 10px;
+	font-size: 14px;
+	font-weight: normal !important;
 	box-shadow: 1px 1px 1px #888;
+	width: 323px;
 }
-#directionsPanel {
+.panel-label {
+	display: inline;
+}
+.inline {
+	display: inline;
+}
+#directions-panel {
 	height: 100%;
 	float: right;
 	width: 390px;
 	overflow: auto;
-	border-left: 1px solid black;
+	border-left: 2px dotted black;
 	padding: 4px 10px;
 	font-family: Helvetica;
+}
+#directions-title {
+	text-align: center;
 }
 .adp {
 	font-family: Helvetica !important;
 	font-size: 12px !important;
 }
-
-#map-canvas {
-	margin-right: 400px;
-}
-
-#control {
-	background: #fff;
-	padding: 5px;
-	font-size: 14px;
-	font-family: Arial;
-	border: 1px solid #ccc;
-	box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
-	display: none;
-}
-
-@media print {
-	#map-canvas {
-		height: 500px;
-		margin: 0;
-	}
-
-	#directions-panel {
-		float: none;
-		width: auto;
-	}
+.adp-legal, .adp-warnbox {
+	display: none !important;
 }
